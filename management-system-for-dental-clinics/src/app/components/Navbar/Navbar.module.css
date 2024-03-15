@@ -1,0 +1,28 @@
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoName{
+    font-weight: bold;
+    font-size: 22px;
+    font-family:'Montserrat';
+}
+
+.links{
+    display: flex;
+ align-items: center;
+    gap: 10px;
+}
+.logo{
+    border-radius: 45px;
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
