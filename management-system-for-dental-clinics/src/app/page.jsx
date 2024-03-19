@@ -1,17 +1,25 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Hero from "/public/images/hero.png"
+import Link from "next/link";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import { ThemeProvider } from "@/context/ThemeContext";
 export default function Home() {
   return (
-<div className={styles.container}>
+    
 
+    <div>      
+      <Navbar/>
+      <hr/>
+      <div className={styles.container}>    
     <div className={styles.col}>
         <h1 className={styles.title}>Welcome to the Website of Dental Clinics at Al-Baath University </h1>
         <p  className ={styles.description}>A service site to facilitate communication between students and patients</p>
         <div>
           <h5>PATIENT :</h5>
           <div className={styles.buttoncontainer}>
-            <button  className ={styles.button}>NEW CASE</button>
+          <Link href={"/patient"}><button  className ={styles.button}>NEW CASE</button></Link>
           </div>
         </div>
     </div>
@@ -22,12 +30,17 @@ export default function Home() {
 
         <h5>STUDENT :</h5>
         <div className={styles.buttoncontainer}>
-          <button className={styles.button}>Sing in</button>
-          <button className={styles.button}>Log in</button>
+        <Link  href="/signin"><button className={styles.button}> Sign in </button></Link>
+        <h3>or</h3>
+        <Link href="/signup"><button className={styles.button}> Sign up </button></Link>
         </div>
       </div>
     </div>
-</div>
 
-    );
+            </div>
+          <hr/>
+        <Footer/>
+        </div>
+    
+);
 }

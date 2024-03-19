@@ -1,9 +1,8 @@
-import "./globals.css";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import "../globals.css";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Montserrat} from "next/font/google";
-
 
 const montserrat = Montserrat({ subsets: ["latin"], 
 weight:['400','800','500']
@@ -18,21 +17,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     
-<html lang="en">
-  <body className={montserrat.className}>
-  <ThemeProvider> 
+  
+
+    // <ThemeProvider>
       
       <div className="container">
- 
-        {/* <hr/> */}
+        <Navbar/>
+        <hr/>
         {children}
-        {/* <hr/> */}
-     
+        <hr/>
+        <Footer/>
       </div>
-      </ThemeProvider>
- 
-  </body>
-</html>
+    // </ThemeProvider>
 
   );
 }

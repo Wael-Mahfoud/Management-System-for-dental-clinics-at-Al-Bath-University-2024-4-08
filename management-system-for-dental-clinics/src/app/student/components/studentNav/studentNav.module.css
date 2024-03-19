@@ -1,0 +1,43 @@
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoName{
+    font-weight: bold;
+    font-size: 22px;
+    font-family:'Montserrat';
+}
+
+.links{
+    display: flex;
+ align-items: center;
+    gap: 10px;
+}
+.logo{
+    border-radius: 45px;
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+  
+.button{
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--size-border-radius);
+    width: max-content;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  

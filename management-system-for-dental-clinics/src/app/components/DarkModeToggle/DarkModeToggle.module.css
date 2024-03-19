@@ -6,7 +6,8 @@
     align-items: center;
     padding: 2px;
     position: relative;
- }
+    margin-right: 30px;
+   }
  .icon{
     font-size: 18px;
  }
