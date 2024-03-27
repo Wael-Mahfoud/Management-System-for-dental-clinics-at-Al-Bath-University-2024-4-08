@@ -10,6 +10,15 @@
    
 }
 
+.button:hover{
+    border-radius: 20%;
+    color: #030303;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 10px var(--cclr))
+    drop-shadow(0 0 20px var(--cclr)) drop-shadow(0 0 6px var(--cclr));
+    ;
+  }
+
 .element{
     width: 250px;
     height:40px ;

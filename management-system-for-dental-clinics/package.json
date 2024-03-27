@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.9",
+    "@kinde-oss/kinde-auth-nextjs": "file:kinde-oss/kinde-auth-nextjs/dist/types/server",
     "next": "14.1.3",
+    "openai": "^4.29.2",
     "react": "^18",
     "react-dom": "^18"
   },

@@ -4,9 +4,10 @@ import {image} from './data'
 export default function Advices (){
 
 return(
+    
     <div className={styles.container}> 
   
-    <h1 className={styles.title} style={{marginTop:'40px'}}>9 TIPS TO KEEP YOUR TEETH HEALTHY :</h1>
+    <h1 className={styles.title} style={{marginTop:'40px'}} >9 TIPS TO KEEP YOUR TEETH HEALTHY :</h1>
   
     <div className={styles.imagecontainer}>
     {
@@ -72,8 +73,36 @@ return(
        <p>Determine the right amount of mouthwash to be used, empty the mouthwash into the mouth, rinse teeth with mouthwash vigorously, gargle for at least 30 seconds, and spit out. Always check the instructions posted on the label by the manufacturer to determine how to use mouthwash.</p>
     </ol>
 
-    <p style={{marginBottom:'60px'}}>Finally, do not delay those dental check-ups you have scheduled. Proper dental hygiene with regular professional follow-ups are your only way to avoid tooth decay and gum problems and maintain the freshness you seek! </p>
+    <p >Finally, do not delay those dental check-ups you have scheduled. Proper dental hygiene with regular professional follow-ups are your only way to avoid tooth decay and gum problems and maintain the freshness you seek! </p>
+
+    <div>
+      <h1 className={styles.title} >Preventive measures During the provision of dental healthcare to prevent the transmission of infection : </h1>
+
+      <div  className={styles.text} style={{marginBottom:'60px'}}>  
+
+             <ul className={styles.col}>           
+
+<li>Adherence to standard precautions by implementing infection control practices such as handwashing, applying respiratory precautions, and ensuring the safety of sharp instruments, in addition to safe injection practices.</li>
+<li>Implementation of infection control precautions, which may include patient isolation, ensuring adequate room ventilation, providing respiratory protection (N-95 masks) for healthcare providers, or postponing non-emergency dental procedures.</li>
+<li>Wearing surgical masks and protecting the eyes with a rigid side shield or wearing a full-face mask to safeguard the mucous membranes of the eyes, nose, and mouth during procedures that may potentially generate sprays or droplets of blood or other body fluids.</li>
+<li>Surgical masks should be used once and a mask should be used for each patient.</li>
+<li>Surgical masks should be used once and a mask should be used for each patient.</li>
+<li>Relying on extracoral radiographic images, such as panoramic or cone-beam computed tomography (CBCT), or suitable alternatives for intraoral radiography during the COVID-19 pandemic, as intraoral radiography may induce coughing or saliva secretion in patients.</li>
+            </ul>
+      <ul className={styles.col} style={{marginBottom:'60px'}}>
+<li>Minimize respiratory aerosol production as much as possible by prioritizing manual methods.</li>
+<li>Use a rubber dam during procedures that produce aerosols, as it helps reduce airborne droplets.</li>
+<li>Employ four-handed dentistry techniques to control infection.</li>
+<li>Utilize high-volume evacuation devices and be aware of potential backflow situations that may occur when using saliva ejectors.</li>
+<li>Use absorbable surgical sutures lasting 3 to 5 days in the oral cavity to avoid the need for another session.</li>
+<li>Reduce the use of 3-in-1 syringes as they may produce droplets due to water or air egress</li>
+
+        </ul>
     </div>
+</div>
+
+    </div>
+
 )
 
 }

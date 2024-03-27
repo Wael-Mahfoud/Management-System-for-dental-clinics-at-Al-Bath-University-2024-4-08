@@ -19,7 +19,9 @@ height={50}
 </div>
 <div className={styles.links}>
 <DarkModeToggle/>
-
+<nav>
+    <ul className={styles.ul}>
+<li>
 {
     Links.map(link => <Link
     key={link.id}
@@ -28,6 +30,9 @@ height={50}
 
     >{link.title}</Link>)
 }
+</li>
+</ul>
+</nav>
 <Link href="/"> <button className={styles.button}>Logout</button> </Link>
 
 </div>

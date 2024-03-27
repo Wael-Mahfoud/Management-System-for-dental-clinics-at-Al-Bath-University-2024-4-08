@@ -16,7 +16,7 @@ export default function Signin (){
                 <input type="Password" placeholder="Password" className={styles.element}/>
                    </div>
                    <div className={styles.buttoncontainer}>
-                <button type={"submit"} className={styles.button}>Sing In</button>
+                <button type={"submit"} className={styles.button}>Log In</button>
               <Link href="/"> <button style={{marginLeft:"72px"}}  className={styles.button}>Back</button></Link> 
                 
                 </div>

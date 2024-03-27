@@ -1,8 +1,10 @@
 :root{
   --color-primary:#1fc0cc;
   --color-secondary:#bbb;
-
+  --clr-primary :#b5b53c;
   --size-border-radius:5px;
+  --clr:#a8a5a5;
+  --cclr:#495220;
 }
 * {
   box-sizing: border-box;

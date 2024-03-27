@@ -4,7 +4,8 @@ import Hero from "/public/images/hero.png"
 import Link from "next/link";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import { ThemeProvider } from "@/context/ThemeContext";
+
+
 export default function Home() {
   return (
     
@@ -19,18 +20,21 @@ export default function Home() {
         <div>
           <h5>PATIENT :</h5>
           <div className={styles.buttoncontainer}>
-          <Link href={"/patient"}><button  className ={styles.button}>NEW CASE</button></Link>
+
+          <Link  href="/patient"><button className={styles.button}> New Case </button></Link>        
+  
+
           </div>
         </div>
     </div>
 
-    <div className={styles.col}> 
+    <div className={styles.col} > 
       <Image className={styles.img} src={Hero} alt='Dental Clinics'/>
       <div>
 
         <h5>STUDENT :</h5>
         <div className={styles.buttoncontainer}>
-        <Link  href="/signin"><button className={styles.button}> Sign in </button></Link>
+        <Link  href="/login"><button className={styles.button}> Log In </button></Link>
         <h3>or</h3>
         <Link href="/signup"><button className={styles.button}> Sign up </button></Link>
         </div>
