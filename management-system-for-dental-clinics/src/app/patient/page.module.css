@@ -1,15 +1,23 @@
 .container{
-    margin-top: 5px;
-    padding-bottom: 20px;
-    margin-left: 5px;
-    padding-left: 5px;
-    width: 350px;    
-    background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
-    border-radius: 25px ;
-    border: 3px solid #555;
-        
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    gap: 20px;  
+  }
+    
+    .col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0px; */
+    /* margin-bottom: 40px;  */
+    justify-content: space-between;
+  
 
 }
+
+  
 
 .listcontainer{
     margin-top: 8px;
@@ -17,7 +25,7 @@
     margin-left: 5px;
     padding-left: 20px;
     width: 350px;
-    height: 100px;    
+    height:75px;    
     background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
     border-radius: 25px ;
     border: 3px solid #555;
@@ -94,6 +102,12 @@
 
 }
 
+/* .info{
+    border-radius: 25px ;
+    border: 3px solid #555555;
+
+} */
+
 .teethphoto{
     border: #c35649 solid;
     border-radius: 22px;
@@ -151,7 +165,7 @@
     
 }
 .pragraph{
-position: relative;
+/* position: relative; */
 left: 600px;
 bottom: 600px;
 border: #fff solid;
@@ -165,7 +179,7 @@ background-size: 200% 200%;
 animation: backgroundAnimation 5s ease infinite;
 color: #000;
 border-radius: 45px ;
-
+padding-bottom: 40px;
 }
 
 @keyframes backgroundAnimation {
@@ -180,12 +194,40 @@ border-radius: 45px ;
     }
   }
   
+  @keyframes animate {
+    0% {
+        color: #00dbde;
+    
+    }
+    50% {
+
+        color:#fff;
+
+    }
+    100% {
+color: #00dbde;
+    }
+  }
+  
 .text{
-    background: linear-gradient(to bottom,var(--clr-primary),var(--color-secondary) );
+    /* background: linear-gradient(to bottom,var(--clr-primary),var(--color-secondary) );
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 50px;
-animation: slideIn 2s 1 ;}
+animation: slideIn 2s 1 ; */
+position: relative;
+font-size: 6em;
+letter-spacing: 15px;
+color: #0e3742;
+text-transform: uppercase;
+width: 100%;
+text-align: center;
+-webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+line-height: 0.7em;
+outline: none;
+animation: animate 5s linear infinite;
+font-family: inter;
+}
 
 @keyframes slideIn {
     0% {transform:translateX(-50%);}
@@ -194,12 +236,113 @@ animation: slideIn 2s 1 ;}
 
 }
 
+.group{
+    position: relative;
+}
+
+.container_1{
+    padding-top: 20px;
+
+}
 
 
 
+.main_input{
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 185px;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: transparent;
+    color: #ffffff;
+}
+.main_input:focus{
+    outline: none;
+    border-bottom-color: #42ff1c ;
+
+}
+
+.label{
+    font-weight: 800;
+    color: #111;
+    font-size: 15px;
+    /* font-weight: normal; */
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.main_input:focus ~ .label,
+.main_input:valid ~ .label{
+    top: -20px;
+    font-size: 14px;
+    color: #42ff1c;
+}
+.highligh_span{
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+
+}
+
+.main_input:focus ~ .highlight_span{
+    -webkit-animation: input_focus 0.3s ease;
+    animation: input_focus 0.3s ease;
+}
+
+@keyframes input_focus{
+    from{
+        background: #42ff1c;
+    }
+to{
+    width: 185px;
+}
+}
 
 
 
+.form_1{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+       
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width:fit-content;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 120px 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: black;
+    background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
+    border-radius: 25px ;
+    border: 3px solid #555555;
+
+    /* position:absolute; */
+   
+}
 
 
 

@@ -1,23 +1,40 @@
-import React from "react";
+"use client"
+
 import styles from "./page.module.css";
 import Footer from "@/app/components/Footer/Footer";
 import Image from "next/image";
 import hero from "/public/images/default image.png";
 import heroo from "/public/images/emoji.gif";
+import React, { useState, useEffect } from "react";
 export default function StudentProfile() {
+
+  
+
+  const [ProfileImage, setProfileImage] = useState(() => {
+    const savedImage = localStorage.getItem('profileImage');
+    return savedImage ? savedImage : hero;
+ });
+
+ useEffect(() => {
+    // Update the state based on the image saved in local storage
+    const savedImage = localStorage.getItem('profileImage');
+    if (savedImage) {
+      setProfileImage(savedImage);
+    }
+ }, []);
+
+ const handleImageChange = (event) => {
+    const selectedImage = event.target.files[0];
+    const imageUrl = URL.createObjectURL(selectedImage);
+    setProfileImage(imageUrl);
+    // Save the image URL in local storage
+    localStorage.setItem('profileImage', imageUrl);
+ };
+
+
   return (
-    <div>
-      <p style={{ position: "relative", left: "899px", top: "60px" }}>
-        Hi Doctor!
-      </p>
-      <Image
-        src={heroo}
-        width={30}
-        height={30}
-        alt="emoji image"
-        className={styles.emoji}
-      />
-      <div className={styles.container}>
+  <div className={styles.container}>
+       <div className={styles.col}>
         <div className={styles.infocontainer}>
           <div style={{ padding: "3px" }}>
             <lable className={styles.title}>Full Name:</lable>
@@ -54,20 +71,38 @@ export default function StudentProfile() {
               choose your profil picture :
             </label>{" "}
             <br />
-            <input type="file" className={styles.button}></input>
+            <input type="file" className={styles.button} accept="image" onChange={handleImageChange} ></input>
+<button type="submit" className={styles.button}>Save</button>
           </div>
         </div>
-
+        </div>
         <div className={styles.col}>
-          <Image
-            src={hero}
+          
+          {ProfileImage&& <Image
+            src={ProfileImage}
             width={250}
             height={250}
             alt="student image"
             className={styles.image}
-          />
-        </div>
+          
+/>}
+        <div className={styles.hello}>
+        <p className={styles.text}>
+         Hi Doctor!
+         </p>
+      <Image
+        src={heroo}
+        width={50}
+        height={50}
+        alt="emoji image"
+        className={styles.emoji}
+
+/>
+
       </div>
-    </div>
+     </div>
+
+        </div>
+
   );
 }

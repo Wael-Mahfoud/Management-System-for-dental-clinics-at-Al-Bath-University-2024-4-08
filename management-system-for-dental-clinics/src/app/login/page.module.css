@@ -1,4 +1,4 @@
-.element{
+/* .element{
     width: 250px;
     height:40px ;
     padding: 10px 100px  ;
@@ -13,25 +13,28 @@
     /* background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
     background-clip: text;
     -webkit-text-fill-color: transparent; */
-    padding-top: 20px;  
+    /* padding-top: 20px;   */
     
-} 
-.form{
+/* }  */
+/* .form{
    
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
     
-}
+} */ 
 
 .button{
     border-radius: var(--size-border-radius);
+
     padding: 10px 30px  ;
     width: 250px;
     height:40px ;
     cursor: pointer;
-    margin-left: 66px;
+    /* margin-left: 50px; */
+    margin-top: 1.2rem;
+
     background-color: var(--color-primary);
     border: none;
     width: max-content;
@@ -41,17 +44,19 @@
   }
 
   .container{
-    margin-top: 120px;
+    
+    
     padding-bottom: 20px;
-    margin-left: 355px;
     padding-left: 22px;
     width: 300px;    
-    background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
-    border-radius: 25px ;
-    border: 2px solid #555;
-        
+   
+    margin: auto;
+    margin-top: 50px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
 
-}
+}  
 
 .button:hover{
     border-radius: 20%;
@@ -62,9 +67,118 @@
     ;
   }
 .buttoncontainer{
+    /* flex: 1; */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+
+}
+
+.group{
+    position: relative;
+}
+.form{
+
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 120px 40px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-right: 40px;
+    padding-left: 40px;
+    /* background-color: black; */
+    background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
+    border-radius: 20px;
+    position: absolute;
 
 }
+
+.login{
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: white;
+}
+.container_1{
+    padding-top: 30px;
+
+}
+
+.main_input{
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 185px;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: transparent;
+    color: #ffffff;
+}
+.main_input:focus{
+    outline: none;
+    border-bottom-color: #42ff1c ;
+
+}
+
+.label{
+    color: #111;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.main_input:focus ~ .label,
+.main_input:valid ~ .label{
+    top: -20px;
+    font-size: 14px;
+    color: #42ff1c;
+}
+.highligh_span{
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+
+}
+
+.main_input:focus ~ .highlight_span{
+    -webkit-animation: input_focus 0.3s ease;
+    animation: input_focus 0.3s ease;
+}
+
+@keyframes input_focus{
+    from{
+        background: #42ff1c;
+    }
+to{
+    width: 185px;
+}
+}
+

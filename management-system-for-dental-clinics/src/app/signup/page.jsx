@@ -6,49 +6,51 @@ import Link from "next/link";
 export default function Singup() {
   return (
     <div className={styles.container}>
-      <div className={styles.container1}>
+      
+      
+        <form className={styles.form}>
+        <div className={styles.container1}>
         <Image src={hero} alt="student logo" />
         <Image src={hero2} alt="student logo" />
       </div>
-      <div className={styles.container2}>
-        <form className={styles.form}>
-          <div>
-            <p className={styles.title}>Enter your Full Name :</p>
+       <p className={styles.sinup}>Sinup</p>
+          <div className={styles.group}>
+            
             <input
               type="text"
-              placeholder="Full Name"
-              className={styles.element}
+              required="true"
+              className={styles.main_input}
             />
+            <span className={styles.highlight_span}></span>
+            <label className={styles.label}>Full Name</label>
           </div>
-          <div>
-            <p className={styles.title}>Enter your University ID :</p>
-            <input
-              type="text"
-              placeholder="University ID"
-              className={styles.element}
-            />
+          <div  className={styles.container_1} >
+<div className={styles.group}>
+          <input type="text"  className={styles.main_input} required="true"/>
+                <span className={styles.highlight_span}></span>
+                  <label className={styles.label}>University ID</label>
+                  </div>
           </div>
-          <div>
-            <p className={styles.title}>Enter your Password :</p>
-            <input
-              type="Password"
-              placeholder="Password"
-              className={styles.element}
-            />
-          </div>
+          <div className={styles.container_1}>
+          <div className={styles.group}>
+          <input type="Password"  className={styles.main_input} required="true"/>
+                <span className={styles.highlight_span}></span>
+                  <label className={styles.label}>Password</label>
+                  </div>
+                    </div>
           <div className={styles.buttoncontainer}>
             <button type={"submit"} className={styles.button}>
               Sing up
             </button>
             <Link href="/">
               {" "}
-              <button style={{ marginLeft: "74px" }} className={styles.button}>
+              <button  className={styles.button}>
                 Back
               </button>
             </Link>
           </div>
         </form>
       </div>
-    </div>
+    
   );
 }

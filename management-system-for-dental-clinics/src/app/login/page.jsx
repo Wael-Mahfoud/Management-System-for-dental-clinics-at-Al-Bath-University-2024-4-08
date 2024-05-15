@@ -6,18 +6,26 @@ export default function Signin (){
    
         
             <form className={styles.form}> 
+                <p className={styles.login}>Login</p>
+                <div className={styles.group}>
         
-                <div>
-                <p className={styles.title}>Enter your University ID :</p>
-                <input type="text" placeholder="University ID" className={styles.element}/>
+                <input className={styles.main_input} required="true" type="text"/>
+                <span className={styles.highlight_span}></span>
+                 <label className={styles.label}>University ID</label>
                    </div>
-                   <div>
-                <p className={styles.title}>Enter your Password :</p>
-                <input type="Password" placeholder="Password" className={styles.element}/>
+                 
+                   <div className={styles.container_1}>
+                    <div className={styles.group}>
+                
+                <input type="Password"  className={styles.main_input} required="true"/>
+                <span className={styles.highlight_span}></span>
+                  <label className={styles.label}>Password</label>
+                   
                    </div>
+                </div>
                    <div className={styles.buttoncontainer}>
                 <button type={"submit"} className={styles.button}>Log In</button>
-              <Link href="/"> <button style={{marginLeft:"72px"}}  className={styles.button}>Back</button></Link> 
+              <Link href="/"> <button  className={styles.button}>Back</button></Link> 
                 
                 </div>
             </form>
@@ -25,5 +33,6 @@ export default function Signin (){
             
              </div>
 
-    )
+    
+            )
 }

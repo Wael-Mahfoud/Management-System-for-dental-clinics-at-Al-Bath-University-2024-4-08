@@ -1,19 +1,24 @@
 .image{
     border-radius: 25px;
     border: 3px solid #555 ;
+margin: 10px;
 }
 
 .imagecontainer{
-    display: flex;
-    grid-template-columns: repeat(2,32%);
-    gap:40px;  
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(11.25rem,100%),1fr));
+    grid-gap: 2rem;
+    /* gap: 1rem; */
 }
 
 .container{
-    flex: 1;
+    /* flex: 1;
+    display: flex;*/
+    /* flex-direction: column;  */
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* margin-bottom: 20px;  */
+    gap: 30px;
 }
 
 .li{

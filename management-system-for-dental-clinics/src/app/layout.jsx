@@ -2,12 +2,12 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
-import { Inter} from "next/font/google";
+import {  Montserrat} from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 
 
-const inter = Inter({ subsets: ["latin"], 
-// weight:['400','800','500','900']
+const montserrat = Montserrat({ subsets: ["latin"], 
+weight:['400','800','500','900']
  }
 );
 
@@ -19,22 +19,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     
-    // <ClerkProvider>
+
 <html lang="en">
-  <body className={inter.className} >
+  <body className={montserrat.className} >
   <ThemeProvider> 
-      
-      <div className="container">
- 
-        {/* <hr/> */}
+      <div className="countainer">
         {children}
-        {/* <hr/> */}
-     
-      </div>
+        </div>
+      
+      
       </ThemeProvider>
  
   </body>
 </html>
-// </ClerkProvider>
   );
 }

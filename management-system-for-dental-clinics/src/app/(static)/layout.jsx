@@ -2,12 +2,12 @@ import "../globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
-import { Montserrat} from "next/font/google";
+// import { Montserrat} from "next/font/google";
 
-const montserrat = Montserrat({ subsets: ["latin"], 
-weight:['400','800','500']
- }
-);
+// const montserrat = Montserrat({ subsets: ["latin"], 
+// weight:['400','800','500']
+//  }
+// );
 
 export const metadata = {
   title: "Dental Cllinics Website",

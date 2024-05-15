@@ -1,11 +1,11 @@
 .image{
-    border-radius: 150px;
+    border-radius: 50%;
     border: 2px solid #1abfc5;
-    position: relative;
-    bottom: 95px;
-    left: 140px;
-    width: 150px;
-    height: 150px;
+    /* position: relative; */
+    /* bottom: 95px; */
+    /* left: 140px; */
+    width: 350px;
+    height: 350px;
     background-color: black;
 
 }
@@ -14,12 +14,14 @@
     box-shadow: 0 0 20px 5px #1abfc5;
     border: #fff solid 1px;
 }
+
 .emoji{
     
     position: relative;
-    left: 970px;
-    top: 35px;
-}
+  margin-top: 40px;
+    /* left: 970px; */
+    /* top: 35px; */
+} 
 
 .title{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -54,7 +56,7 @@ color: black;
      padding: 20px;
      margin: 20px;
      position: relative;
-     background: linear-gradient(to bottom,var(--clr-primary),var(--color-secondary) );
+     background: linear-gradient(to bottom,var(--color-primary),var(--color-secondary) );
     }
     .button:hover{
         border-radius: 20%;
@@ -65,14 +67,14 @@ color: black;
         ;
       }
     
-/* .col{
+ .col{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-} */
+    /* margin-top: 100px; */
+    /* margin-bottom: 50px; */
+} 
 .upload{
     margin-left: 40px;
     position: relative;
@@ -99,3 +101,45 @@ color: black;
     font-size: 10px;
     }
     
+    
+  @keyframes animate {
+    0% {
+        color: #00dbde;
+    
+    }
+    50% {
+
+        color:#fff;
+
+    }
+    100% {
+color: #00dbde;
+    }
+  }
+  
+.text{
+    /* background: linear-gradient(to bottom,var(--clr-primary),var(--color-secondary) );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+animation: slideIn 2s 1 ; */
+position: relative;
+font-size: 3em;
+letter-spacing: 5px;
+color: #0e3742;
+text-transform: uppercase;
+width: 100%;
+text-align: center;
+-webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+line-height: 0.7em;
+outline: none;
+animation: animate 5s linear infinite;
+font-family: inter;
+}
+ 
+.hello{
+    display: flex;
+    flex-direction: row;
+    
+
+}

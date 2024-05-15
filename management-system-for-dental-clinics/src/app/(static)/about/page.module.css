@@ -17,9 +17,9 @@ background-clip: text;
 }
 
 .container{
-  flex: 1;
+  /* flex: 1; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 40px;
 
 }

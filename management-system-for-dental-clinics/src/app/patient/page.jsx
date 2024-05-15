@@ -3,16 +3,36 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Patient() {
   return (
-    <div>
+    <div className={styles.container}>
+      <div className={styles.col}>
       <form className={styles.form}>
-        <div className={styles.container}>
-          <p className={styles.title}>Enter your first name :</p>
-          <input type="text" placeholder="Fname" className={styles.element} />
-          <p className={styles.title}>Enter your middle name :</p>
-          <input type="text" placeholder="Mname" className={styles.element} />
-          <p className={styles.title}>Enter your last name :</p>
-          <input type="text" placeholder="Lname" className={styles.element} />
+
+        <div className={styles.form_1}>
+        
+        <div className={styles.group}>
+            <input type="text" required="true" className={styles.main_input} />
+         <span className={styles.highlight_span}></span>
+          <label className={styles.label}>Enter your first name</label>
+          </div>
+         
+         <div className={styles.container_1}>
+        <div className={styles.group}>       
+          <input type="text" required="true" className={styles.main_input} />
+          <span className={styles.highlight_span}></span>
+          <label className={styles.label}>Enter your middle name</label>
+          </div>
+          </div>
+         <div className={styles.container_1}>
+         <div className={styles.group}>
+    
+          <input type="text" required="true" className={styles.main_input} />
+          <span className={styles.highlight_span}></span>
+          <label className={styles.label}>Enter your last name</label>
+          </div>
+          </div>
+       
         </div>
+       
         <div className={styles.listcontainer}>
           <label htmlFor="case" className={styles.title}>
             choose your case :
@@ -100,6 +120,7 @@ export default function Patient() {
           </label>
           <div className={styles.titlein}>
             {" "}
+
             <input type="checkbox" name="connect" id="email" value="email" />
             <label htmlFor="email" className={styles.titlein}>
               Email
@@ -112,10 +133,12 @@ export default function Patient() {
           </div>
           <div className={styles.titlein}>
             {" "}
+
             <input type="checkbox" name="connect" id="phone" value="phonenum" />
             <label htmlFor="phone" className={styles.titlein}>
               phone Number
             </label>{" "}
+            
             <input
               type="text"
               className={styles.phoneinput}
@@ -129,12 +152,15 @@ export default function Patient() {
           </button>
           <Link href="/">
             {" "}
-            <button style={{ marginLeft: "72px" }} className={styles.button}>
+            <button  className={styles.button}>
               Back
             </button>
           </Link>
         </div>
       </form>
+    
+    </div>
+    <div className={styles.col}>
       <div className={styles.pragraph}>
         <span
           style={{
@@ -170,6 +196,7 @@ export default function Patient() {
           />
           <h1 className={styles.text}>Hello</h1>
         </div>
+      </div>
       </div>
     </div>
   );

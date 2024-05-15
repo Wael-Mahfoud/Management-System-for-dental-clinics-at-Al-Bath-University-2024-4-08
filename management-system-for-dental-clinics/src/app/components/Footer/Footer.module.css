@@ -21,4 +21,27 @@
 }
 .icon:hover{
     opacity: 1;
+    /* box-shadow: 0px 0px 50px var(--color-primary) inset,
+                0px 0px 50px var(--color-primary);
+                border-radius: 50% ; */
 }
+/* 
+.instagram:hover{
+    box-shadow: 0px 0px 7px #ff0095 inset,
+                0px 0px 7px #ff0095
+}
+
+.twitter:hover{
+    box-shadow: 0px 0px 7px #1c9ff1 inset,
+                0px 0px 7px #1c9ff1
+}
+
+.facebook:hover{
+    box-shadow: 0px 0px 7px #0679e6 inset,
+                0px 0px 7px #0679e6
+}
+
+.youtube:hover{
+    box-shadow: 0px 0px 7px #ff0000 inset,
+                0px 0px 7px #ff0000
+} */

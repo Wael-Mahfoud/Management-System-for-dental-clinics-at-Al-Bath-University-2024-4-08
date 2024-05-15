@@ -20,7 +20,7 @@ return(
 
 
       <h2 className={styles.title}>The vision and values of the College: </h2>
-    <ul style={{marginLeft:'50px' ,fontSize:"19px"}} className={styles.container}>
+    <ul style={{fontSize:"19px"}} className={styles.ull}>
       <li>The vision is for the Dental College to become a distinguished institution with excellent capacity in medical education, scientific research, and healthcare provision at both regional and international levels</li>
       <li>The commitment to individual rights to access the best healthcare and privacy protection, while understanding the diversity of society and being committed to it.</li>
       <li>Building sustainable companies and supporting them in educational hospitals, the healthcare system, and various local and international healthcare sectors with the aim of improving the health status of the Syrian community, especially at the regional and international levels</li>
@@ -36,7 +36,7 @@ return(
     </ul>
     
     <h2 className={styles.title}>The goals of the dental college are:</h2>
-    <ul style={{marginLeft:'50px' ,fontSize:"19px"}} className={styles.container}>
+    <ul style={{ fontSize:"19px"}} className={styles.ull}>
       <li>To prepare highly competent dental practitioners who are aware of the oral health needs of the community, effectively contributing to providing oral and dental healthcare, both preventive and therapeuticw, to all citizens.</li>
       <li>To prepare dentists for advanced specialized studies and scientific research that align with the needs of the country and the economic and social development plans in the Syrian Arab Republic and the Arab world.</li>
       <li>Developing higher education in dentistry in a way that meets the healthcare needs of the community, keeps pace with advancements, and embraces scientific and practical technology.</li>
@@ -55,7 +55,7 @@ return(
 
     <h2 className={styles.title}>The specialties available at the Faculty of Dentistry at Al-Baath University differed in terms of clinical specialties and non-clinical specialties.</h2>
              <p>Examples of clinical specialties include:</p>
-            <ul style={{marginLeft:'50px' ,fontSize:"19px"}} >
+            <ul style={{fontSize:"19px"}}  className={styles.ull}>
               <li> General Dentistry</li>
               <li>Prosthodontics</li>
               <li>Orthodontics</li>
@@ -66,7 +66,7 @@ return(
             </ul>
         
             <h2 className={styles.title} >As for non-clinical specialties at the Faculty of Dentistry at Al-Baath University, they can include : </h2>
-            <ul style={{marginLeft:'50px' ,fontSize:"19px"}} >
+            <ul style={{fontSize:"19px"}} className={styles.ull} >
               <li>Anatomy</li>
               <li>Clinical pathology</li>
               <li>Oral and maxillofacial physiology</li>
@@ -76,7 +76,7 @@ return(
               <li>Public Health Science in Dentistry</li>
             </ul>
 
-            </div>
+
       <div className={styles.imagecontainer}>
         { image.map(img=><Image key={img.id} src={`/images/${img.name}.jpg`} width={250} height={250} className={styles.image} alt='faculty'/>)
         }  
@@ -103,5 +103,5 @@ return(
 
 </div>
 
-
+</div>
 )}
