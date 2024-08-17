@@ -1,0 +1,62 @@
+.cascading-right {
+    margin-right: -50px;
+  }
+
+  @media (max-width: 991.98px) {
+    .cascading-right {
+      margin-right: 0;
+    }
+  }
+.card-style{
+    
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+    
+}
+.b1{background-color: hsl(0, 0%, 96%)}
+.b2{color: hsl(217, 10%, 50.8%)}
+
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+.s1{z-index: 10}
+.s2{color: hsl(218, 81%, 95%)}
+.s3{color: hsl(218, 81%, 75%)}
+.s4{color: hsl(218, 81%, 85%)}

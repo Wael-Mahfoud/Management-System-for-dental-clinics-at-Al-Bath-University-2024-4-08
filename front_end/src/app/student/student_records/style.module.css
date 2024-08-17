@@ -1,0 +1,141 @@
+/* style.module.css */
+
+/* تحسين تباعد الجداول */
+.table {
+    margin: 20px 0;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* تحسين خلفية رؤوس الجداول */
+.table thead {
+    background-color: #f8f9fa;
+}
+
+/* إضافة تأثير hover على صفوف الجدول */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* تخصيص أزرار التحكم */
+.btn {
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+/* تحسين مظهر حقل البحث */
+#myInput {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* تحسين الألوان والنصوص */
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-dark {
+    color: #343a40;
+}
+
+/* تحسين الرسائل */
+.alert {
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th,
+.td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* استهداف العمود الأول وتحديد عرض له */
+.tdWidth {
+    width: 250px;
+    /* عرض العمود بالبيكسل */
+    white-space: nowrap;
+    /* لمنع التفاف النص */
+    overflow: hidden;
+    /* إخفاء الفائض */
+    text-overflow: ellipsis;
+    /* لإضافة النقاط الثلاثة (...) */
+}
+
+.tdMDWidth {
+    width: 150px;
+    /* عرض العمود بالبيكسل */
+    white-space: nowrap;
+    /* لمنع التفاف النص */
+    overflow: hidden;
+    /* إخفاء الفائض */
+    text-overflow: ellipsis;
+    /* لإضافة النقاط الثلاثة (...) */
+}

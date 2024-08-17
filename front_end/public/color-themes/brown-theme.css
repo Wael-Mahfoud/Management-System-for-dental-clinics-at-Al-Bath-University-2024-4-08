@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+a,
+.theme_color,
+.scroll-to-top,
+.main-slider-two .title,
+.list-style-one li .icon,
+.video-box .overlay-box span,
+.main-slider .social-box li a:hover,
+.testimonial-block .inner-box .rating .fa,
+.main-header .header-top .language .flag-icon,
+.main-header .header-top .info-list li a:hover,
+.main-header .header-top .info-list li .icon,
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li.current > a,
+.service-block.style-two .inner-box h4 a,
+.about-section .content-column .red-text,
+.main-footer .logo-widget .social-links a:hover,
+.main-footer .consult-widget .social-links a:hover,
+.main-header .outer-box .cart-box .cart-panel .btns-boxed li a:hover,
+.main-header .outer-box .cart-product .inner .cross-icon:hover,
+.main-header .outer-box .cart-product .inner h3 a:hover,
+.main-header .outer-box .cart-box .cart-box-btn:hover,
+.news-block .inner-box .lower-content h4 a:hover,
+.main-footer .news-widget .post h5 a:hover,
+.main-footer .list-link li a:hover,
+.main-footer .timing-widget ul li:last-child,
+.main-slider-two .owl-nav .owl-prev:hover,
+.main-slider-two .owl-nav .owl-next:hover,
+.main-slider-two .video-box,
+.main-slider-three .title,
+.page-breadcrumb li,
+.social-icon-one li a:hover,
+.page-breadcrumb li a:hover,
+.service-block-two .inner-box .title,
+.testimonial-block-two .inner-box .rating .fa,
+.featured-block-two .inner-box .image .icon-box,
+.news-block-two .inner-box .lower-content .post-meta li .icon,
+.news-block-two .inner-box .lower-content h4 a:hover,
+.timetable-section-two .appointment-box .appointment-inner .text a,
+.featured-block-two .inner-box .lower-content h4 a:hover,
+.choose-section .images-column .info-box.style-two .more,
+.featured-block-two .inner-box .lower-content .read-more:hover,
+.contact-map-section .map-info-boxed .info-column ul li strong,
+.testimonial-section .testimonial-column .owl-nav .owl-prev:hover,
+.testimonial-section .testimonial-column .owl-nav .owl-next:hover,
+.pricing-block .inner-box .price span,
+.fact-counter-two .column .inner .icon,
+.main-footer .footer-info-list li a:hover,
+.main-footer .footer-info-list li .icon,
+.testimonial-block-three .inner-box .rating,
+.classess-block .inner-box .image .icon-box,
+.classess-block .inner-box .lower-content .title,
+.classess-block .inner-box .lower-content h4 a:hover,
+.help-widget .lower-content ul li .icon,
+.list-style-two li:before,
+.blog-cat li a:hover,
+.shop-list li a,
+.cart-table tbody tr .remove-btn,
+.checkout-page .default-links li a,
+.shop-page .prod-tabs .reviews-container .rev-header .rating,
+.sidebar .popular-posts .post a:hover,
+.blog-single .post-share-options .social-box li a:hover,
+.shop-page .prod-tabs .add-review .rating .rate-box:hover,
+.shop-page .prod-tabs .add-review .rating .rate-box:focus,
+.shop-page .prod-tabs .add-review .rating .rate-box:active,
+.product-details .basic-details .details-header .rating span,
+.shop-item .inner-box .lower-content h6 a:hover,
+.main-menu .navigation > li > ul > li:hover > a,
+.main-menu .navigation > li > ul > li > ul > li:hover > a,
+.main-menu .navigation > li > ul > li > a:before,
+.main-menu .navigation > li > ul > li > ul > li > a:before,
+.main-menu .navigation > li > ul > li.dropdown:hover > a:after,
+.news-block-three .inner-box .lower-content h3 a:hover,
+.portfolio-detail-section .inner-box .info-list li span,
+.classes-detail .inner-box .lower-content .schedule-column .inner-column .time span,
+.classess-block .inner-box .lower-content .read-more:hover,
+.coming-soon .emailed-form .form-group input[type="submit"],
+.coming-soon .emailed-form button,
+.author-box .social-icon li a,
+.blog-single .post-share-options .tags a:hover,
+.blog-single .inner-box .lower-content blockquote .quote-icon,
+.news-block-three .inner-box .lower-content .read-more:hover{
+	color:#96053e;
+}
+
+.main-header .sticky-header .main-menu .navigation > li:hover > a,
+.main-header .sticky-header .main-menu .navigation > li.current > a{
+	color:#96053e !important;
+}
+
+/* Background Color */
+
+.clock-hour,
+.clock-minute,
+.clock-second:after,
+.checkout-btn,
+.cart-table .cart-header,
+.scroll-to-top:hover,
+.services-section:after,
+.featured-block .icon:after,
+.header-style-three .header-top,
+.team-block .inner-box .content:before,
+.timetable-section .table-title-box .title,
+.classess-block .inner-box:hover .image .icon-box,
+.timetable-section .timetable-tabs .tab-btns .tab-btn,
+.main-header .outer-box .cart-box .cart-box-btn .total-cart,
+.main-header .header-top .language .dropdown-menu > li > a:hover,
+.main-header .outer-box .cart-box .cart-panel .btns-boxed li a,
+.main-slider-two .owl-dots .owl-dot.active,
+.main-slider-two .owl-dots .owl-dot:hover,
+.choose-section .images-column .info-box,
+.featured-block-two .inner-box .image,
+.news-block-two .inner-box .image,
+.gallery-block .inner-box .image .content .icon,
+.ui-state-active, .ui-widget-content .ui-state-active,
+.featured-block-two .inner-box:hover .image .icon-box,
+.timetable-section-two .table-title-box .title,
+.timetable-section-two .timetable-tabs .tab-btns .tab-btn,
+.main-footer .consult-widget .phone .icon,
+.search-popup .close-search,
+.newsletter-section .inner-container,
+.accordion-box .block .icon-outer .icon,
+.team-block-two .inner-box .side-title,
+.team-block-two .inner-box .content:before,
+.classess-block .inner-box .image,
+.sidebar .service-list li a:hover,
+.sidebar .service-list li.current a,
+.brochure-box .inner .icon,
+.sidebar-title:before,
+.sidebar .search-box .form-group button,
+.sidebar .popular-tags a:hover,
+.shop-item .inner-box .image .sale,
+.sidebar-page-container .comments-area .comment-box .theme-btn:hover,
+.shop-item .inner-box .image .overlay-box .cart-option li a:hover,
+.styled-pagination li.active a, .styled-pagination li:hover a,
+.gallery-block .inner-box .image .content .content-inner:before,
+.testimonial-block-three .inner-box .author-image .quote-icon,
+.shop-item .inner-box .image .overlay-box .cart-option li a,
+.news-block-three .inner-box .image,
+.news-block-three .inner-box .owl-nav .owl-prev:hover,
+.news-block-three .inner-box .owl-nav .owl-next:hover,
+.news-block-three .inner-box .image .overlay-box,
+.blog-single .inner-box .image,
+.author-box .social-icon li a:hover,
+.main-header .sticky-header .outer-box .cart-box .cart-box-btn .total-cart{
+	background-color:#96053e;
+}
+
+/* Border Color */
+.clock-second:after,
+.btn-style-three:hover,
+.btn-one-outer:before,
+.btn-one-outer:after,
+.btn-two-outer:before,
+.btn-two-outer:after,
+.btn-three-outer:before,
+.btn-three-outer:after,
+.main-menu .navigation > li > ul,
+.main-footer .consult-widget .phone,
+.main-header .btn-box .pass-btn,
+.author-box .social-icon li a:hover,
+.author-box .social-icon li a,
+.single-product-item .img-holder,
+.main-header.header-style-two .nav-outer:before,
+.main-header .header-upper .logo-box:before,
+.main-menu .navigation > li > ul > li > ul,
+.main-header .outer-box .cart-box .cart-panel,
+.ui-state-active, .ui-widget-content .ui-state-active,
+.main-header .header-top .language .dropdown-menu,
+.featured-block-two .inner-box .lower-content .read-more:before,
+.timetable-section .timetable-tabs .tab-btns .tab-btn,
+.timetable-section-two .timetable-tabs .tab-btns .tab-btn,
+.main-header .outer-box .cart-box .cart-panel .btns-boxed li a,
+.testimonial-block-two .inner-box .upper-box .author-image:before,
+.classess-block .inner-box .lower-content .read-more:before,
+.rtl .main-header .header-upper .logo-box:before,
+.cart-section .apply-coupon .form-group input[type="text"],
+.news-block-three .inner-box .lower-content .read-more:before,
+.shop-form input:focus, .shop-form select:focus, .shop-form textarea:focus,
+.styled-form input:focus, .styled-form select:focus, .styled-form textarea:focus,
+.testimonials-thumbs-carousel .carousel-thumbnails .carousel-indicators li .image:before{
+	border-color:#96053e;
+}
+
+.btn-style-two:after,
+.btn-style-two:before,
+.btn-style-three:before,
+.btn-style-three:after{
+	border-bottom-color:#96053e;
+}
+
+.timetable-section-two .timetable-tabs .tab-btns .tab-btn:before,
+.timetable-section .timetable-tabs .tab-btns .tab-btn:before{
+	border-left-color:#96053e;
+}
+
+.fact-counter-two .column .inner .content:before,
+.header-style-three .main-menu .navigation > li:before{
+	filter: grayscale(100%);
+}
+
+/*RGBA Color Light*/
+.instagram-widget .post-thumb .overlay-box,
+.sidebar .popular-posts .post .post-thumb .overlay-box{
+	background-color:rgba(150,5,62,0.70);
+}
+
+/*RGBA Color Dark*/
+
+.fluid-section-one .outer-container .right-column .image-layer:before,
+.counter-section .inner-container .pattern-layer:before{
+	background-color:rgba(150,5,62,0.90);
+}
+
+@media only screen and (max-width: 767px){
+	
+	.main-menu .navbar-header .navbar-toggle{
+		border-color:#96053e;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle,
+	.main-menu .navbar-collapse > .navigation,
+	.main-menu .navbar-collapse > .navigation > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > a:hover,
+	.main-menu .navbar-collapse > .navigation > li > a:active,
+	.main-menu .navbar-collapse > .navigation > li > a:focus,
+	.main-menu .navbar-collapse > .navigation > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li.current > a,
+	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a,
+	.header-style-two.inner-header .main-menu .navigation > li > a{
+		background-color:#96053e;
+	}
+	
+}

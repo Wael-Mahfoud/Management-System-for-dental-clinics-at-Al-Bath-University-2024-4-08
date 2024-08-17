@@ -1,0 +1,73 @@
+.card {
+    border-radius: 10px;
+    /* تقريب الزوايا */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* تأثيرات انتقال سلسة */
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    /* رفع الكارد عند التحويم */
+
+    box-shadow: 0 12px 16px black;
+    /* زيادة الظل عند التحويم */
+}
+
+.card-header {
+    background-color: #07171a;
+    /* لون خلفية الرأس */
+    color: white;
+    /* لون النص */
+    padding: 15px 20px;
+    /* تبطين */
+    border-top-left-radius: 10px;
+    /* تقريب زاوية الرأس العلوية اليسرى */
+    border-top-right-radius: 10px;
+    /* تقريب زاوية الرأس العلوية اليمنى */
+}
+
+.card-body {
+    padding: 20px;
+    /* تبطين أكثر سمكًا للمحتوى */
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    /* تنسيق الأزرار لتتطابق مع الرأس */
+    border: none;
+    /* إزالة الحدود */
+    border-radius: 5px;
+    /* تقريب زوايا الزر */
+    padding: 10px 15px;
+    /* تبطين */
+    color: white;
+    /* لون النص */
+    transition: background-color 0.3s ease;
+    /* تأثير انتقال للون الخلفية */
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    /* تغيير لون الزر عند التحويم */
+}
+
+.form-control {
+    border-radius: 5px;
+    /* تقريب زوايا الحقول */
+    border: 1px solid #ccc;
+    /* حدود خفيفة للحقول */
+}
+
+.profile-img-container {
+    margin: 10px auto;
+    /* توسيط ومسافة من الأعلى والأسفل */
+    transition: transform 0.2s ease;
+    /* تأثير تحويم للصورة */
+}
+
+.profile-img-container:hover {
+    transform: scale(1.05);
+    /* تكبير الصورة قليلاً عند التحويم */
+}

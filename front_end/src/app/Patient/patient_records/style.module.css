@@ -1,0 +1,22 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th,
+.td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* استهداف العمود الأول وتحديد عرض له */
+.tdWidth {
+    width: 300px;
+    /* عرض العمود بالبيكسل */
+    white-space: nowrap;
+    /* لمنع التفاف النص */
+    overflow: hidden;
+    /* إخفاء الفائض */
+    text-overflow: ellipsis;
+    /* لإضافة النقاط الثلاثة (...) */
+}
